@@ -11,7 +11,7 @@ class EmailAddressParser
   end
 
 def parse
-  binding.pry
+  
   if @email_addresses.include?(",")
    parsed = @email_addresses.split /\s|,/
    parsed = parsed.reject { |element| element.empty? }
