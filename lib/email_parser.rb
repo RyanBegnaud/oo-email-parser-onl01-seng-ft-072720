@@ -12,7 +12,6 @@ def parse(email_addresses)
   else 
    parsed = email_addresses.split(" ")
   end
-end
 parsed
-
+end
 end
