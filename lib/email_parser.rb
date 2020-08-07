@@ -5,8 +5,7 @@
 require "pry"
 class EmailAddressParser
   attr_accessor :email_addresses 
-binding.pry
-def parse
+def parse(email_addresses)
   binding.pry
   if email_addresses.include?(",")
     email_addresses.split(",")
