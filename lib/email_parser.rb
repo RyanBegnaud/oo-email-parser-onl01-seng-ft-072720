@@ -21,7 +21,7 @@ def parse
    parsed = parsed.collect(&:strip)
    parsed.uniq!
   end
-  binding.pry
+  
 parsed
 end
 end
