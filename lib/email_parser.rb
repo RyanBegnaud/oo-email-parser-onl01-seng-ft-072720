@@ -13,7 +13,7 @@ class EmailAddressParser
 def parse
   binding.pry
   if @email_addresses.include?(",")
-   parsed = @email_addresses.split 
+   parsed = @email_addresses.split /\s|,/
    .split /\s|'|,/
    parsed = parsed.reject { |element| element.empty? }
    parsed = parsed.collect(&:strip)
