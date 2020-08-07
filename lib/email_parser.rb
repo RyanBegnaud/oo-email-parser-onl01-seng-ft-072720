@@ -12,7 +12,7 @@ class EmailAddressParser
 
 def parse
   binding.pry
-  if email_addresses.include?(",")
+  if @email_addresses.include?(",")
    parsed = email_addresses.split(",")
   else 
    parsed = email_addresses.split(" ")
