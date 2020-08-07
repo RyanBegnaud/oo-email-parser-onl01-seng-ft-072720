@@ -19,6 +19,7 @@ def parse
    parsed = @email_addresses.split(" ")
    parsed = parsed.collect(&:strip)
   end
+  binding.pry
 parsed
 end
 end
