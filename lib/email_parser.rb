@@ -16,7 +16,7 @@ def parse
    parsed = @email_addresses.split(",")
    parsed = parsed.collect(&:strip)
    parsed.uniq!
-  else 
+  else
    parsed = @email_addresses.split(" ")
    parsed = parsed.collect(&:strip)
    parsed.uniq!
