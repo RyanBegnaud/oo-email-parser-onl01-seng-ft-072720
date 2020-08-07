@@ -5,7 +5,7 @@
 class EmailAddressParser
   attr_accessor :email_addresses 
 
-def parse(email_addresses)
+def parse
   binding.pry
   if email_addresses.include?(",")
     email_addresses.split(",")
