@@ -13,4 +13,6 @@ def parse(email_addresses)
    split = email_addresses.split(" ")
   end
 end
+split
+
 end
