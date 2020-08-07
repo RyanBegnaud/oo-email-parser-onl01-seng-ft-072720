@@ -15,7 +15,7 @@ def parse
   if @email_addresses.include?(",")
    parsed = @email_addresses.split(",")
    parsed = parsed.collect(&:strip)
-   
+   binding.pry
   else 
    parsed = @email_addresses.split(" ")
    parsed = parsed.collect(&:strip)
