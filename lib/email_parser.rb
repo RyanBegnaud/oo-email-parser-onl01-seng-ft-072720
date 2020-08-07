@@ -8,7 +8,7 @@ class EmailAddressParser
 def parse(email_addresses)
   binding.pry
   if email_addresses.include?(",")
-    email_addresses.split(",")
+   split = email_addresses.split(",")
   end
 end
 end
