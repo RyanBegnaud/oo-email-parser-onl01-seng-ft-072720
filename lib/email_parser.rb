@@ -5,7 +5,7 @@
 require "pry"
 class EmailAddressParser
   attr_accessor :email_addresses 
-  def initalize 
+  def initialize 
 
 def parse
   binding.pry
