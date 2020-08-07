@@ -14,7 +14,7 @@ def parse
   binding.pry
   if @email_addresses.include?(",")
    parsed = @email_addresses.split(",")
-   
+   .split /\s|'|,/
    parsed = parsed.reject { |element| element.empty? }
    parsed = parsed.collect(&:strip)
    parsed.uniq!
