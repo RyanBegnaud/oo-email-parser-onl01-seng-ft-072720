@@ -9,6 +9,8 @@ def parse(email_addresses)
   binding.pry
   if email_addresses.include?(",")
    split = email_addresses.split(",")
+ else 
+   split = email_addresses.split(" ")
   end
 end
 end
