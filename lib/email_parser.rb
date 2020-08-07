@@ -18,6 +18,7 @@ def parse
    
   else 
    parsed = @email_addresses.split(" ")
+   parsed.collect(&:strip)
   end
 parsed
 end
